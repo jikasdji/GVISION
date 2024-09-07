@@ -70,19 +70,11 @@ if config_file is not None:
 
         def create_folium_map(landmarks):
             providers = xyz.flatten()
-            selection = ['OpenTopoMap',
-                         'Stamen.Terrain',
-                         'Stamen.TerrainBackground',
-                         'Stamen.Watercolor',
-                         'CartoDB.Positron',
-                         'CartoDB.Voyager',
-                         'WaymarkedTrails.hiking',
-                         'WaymarkedTrails.cycling',
-                         'WaymarkedTrails.mtb',
-                         'WaymarkedTrails.slopes',
-                         'WaymarkedTrails.riding',
-                         'WaymarkedTrails.skating'
-                         ]
+            selection = [
+                'OpenTopoMap',
+                'CartoDB.Positron',
+                'CartoDB.Voyager'
+            ]
 
             # Create a map centered on the first detected location using Folium
             m = folium.Map(
@@ -130,18 +122,8 @@ if config_file is not None:
                         providers = xyz.flatten()
                         selection = [
                             'OpenTopoMap',
-                            'Stamen.Terrain',
-                            'Stamen.TerrainBackground',
-                            'Stamen.Watercolor',
                             'CartoDB.Positron',
-                            'CartoDB.Voyager',
-                            'WaymarkedTrails.hiking',
-                            'WaymarkedTrails.cycling',
-                            'WaymarkedTrails.mtb',
-                            'WaymarkedTrails.slopes',
-                            'WaymarkedTrails.riding',
-                            'WaymarkedTrails.skating',
-                            'OpenRailwayMap'
+                            'CartoDB.Voyager'
                         ]
 
                         m = folium.Map(
