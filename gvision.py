@@ -71,7 +71,6 @@ if config_file is not None:
         def create_folium_map(landmarks):
             providers = xyz.flatten()
             selection = ['OpenTopoMap',
-                         'Stamen.Toner',
                          'Stamen.Terrain',
                          'Stamen.TerrainBackground',
                          'Stamen.Watercolor',
@@ -131,7 +130,6 @@ if config_file is not None:
                         providers = xyz.flatten()
                         selection = [
                             'OpenTopoMap',
-                            'Stamen.Toner',
                             'Stamen.Terrain',
                             'Stamen.TerrainBackground',
                             'Stamen.Watercolor',
